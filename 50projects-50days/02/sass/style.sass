@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap')
+
+$line-border-fill: #3498db
+$line-border-empty: #e0e0e0
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    font-family: muli, sans-serif
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    overflow: hidden
+    background-color: #f6f7fb
+    
+
+.title
+    margin-top: 50px
+    text-align: center
+    width: 100vw
+    color: black
+    position: fixed
+    top: 0
+    left: 0
+
+.container 
+    text-align: center
+
+
+.progress-container
+    position: relative
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+    max-width: 100%
+    width: 350px
+
+    &::before
+        content: ""
+        position: absolute
+        background-color: $line-border-empty
+        top: 50%
+        left: 0
+        height: 4px
+        width: 100%
+        transform: translateY(-50%)
+        z-index: -1
+        transition: .4s ease
+
+
+.progress
+    position: absolute
+    background-color: $line-border-fill
+    top: 50%
+    left: 0
+    height: 4px
+    width: 0
+    transform: translateY(-50%)
+    z-index: -1
+    transition: .4s ease
+
+.circle
+    background-color: #fff
+    color: #999
+    border-radius: 50%
+    height: 30px
+    width: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 3px solid $line-border-empty
+    transition: .4s ease
+    &.active
+        border-color: $line-border-fill
+
+.btn
+    background-color: $line-border-fill
+    color: #fff
+    border: 0
+    border-radius: 6px
+    cursor: pointer
+    font-family: inherit
+    font-size: 14px
+    padding: 8px 30px
+    margin: 5px
+    &:active
+        transform: scale(0.98)
+    &:focus
+        outline: 0
+    &:disabled
+        background-color: $line-border-empty
+        cursor: not-allowed

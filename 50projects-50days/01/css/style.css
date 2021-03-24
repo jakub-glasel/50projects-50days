@@ -22,6 +22,16 @@ body {
   color: white;
 }
 
+.title {
+  margin-top: 50px;
+  text-align: center;
+  width: 100vw;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,7 +43,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 600px;
   border-radius: 50px;
   cursor: pointer;
   -webkit-box-flex: 0.5;
