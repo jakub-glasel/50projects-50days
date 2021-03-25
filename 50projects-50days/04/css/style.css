@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(40deg, #7d5fff, #7158e2);
+  font-family: roboto, sans-serif;
+  height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-container {
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+.search {
+  height: 50px;
+  position: relative;
+  top: 50%;
+}
+
+.search.active .input {
+  width: 300px;
+}
+
+.search.active .btn {
+  -webkit-transform: translateX(250px);
+  transform: translateX(250px);
+}
+
+.input {
+  padding-left: 8px;
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn {
+  background-clip: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 8px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.input:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
