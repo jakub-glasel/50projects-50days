@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap')
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    font-family: ubuntu, sans-serif
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100vh
+    overflow: hidden
+
+.title
+    height: 100px
+    position: fixed
+    top: 0
+    margin-top: 50px    
+
+.bg
+    background: url("../../images/day_5_photo1.webp") no-repeat center center/cover
+    position: absolute
+    top: -30px
+    left: -30px
+    // right: -30px
+    // bottom: -30px
+    width: calc(100vw + 60px)
+    height:  calc(100vh + 60px)
+    z-index: -1
+    text-align: center
+    filter: blur(0px)
+    
+
+
+    & .loading-text
+        font-size: 50px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate()
+        color: #fff
