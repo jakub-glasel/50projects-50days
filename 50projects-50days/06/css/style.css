@@ -22,6 +22,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #efedd6;
+  overflow-x: hidden;
 }
 
 .box {
@@ -36,7 +37,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
+  width: 400px;
   height: 150px;
   margin: 10px 0;
   border-radius: 8px;
@@ -44,10 +45,10 @@ body {
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.8);
   -webkit-transform: translateX(500%);
           transform: translateX(500%);
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
 }
 
 .box h2 {
