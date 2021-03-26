@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap')
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    font-family: Poppins, "Helvetica", sans-serif
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    overflow: hidden
+    background-color: rgb(161, 100, 223)
+
+.title
+    position: absolute
+    top: 20px
+    left: 50%
+    transform: translateX(-50%)
+    width: 600px
+    height: 100px
+    text-align: center
+
+
+.btn
+    background-color: rebeccapurple
+    color: #fff
+    border-radius: 5px
+    font-family: inherit
+    padding: 1.5rem 3rem
+    font-size: 1.5rem
+    border: none
+    margin: 0 20px
+    cursor: pointer
+    &:hover
+        opacity: 0.9
+    &:focus
+        outline: none
+    &:last-of-type
+        background-color: red

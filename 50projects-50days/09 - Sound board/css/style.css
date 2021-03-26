@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: roboto, sans-serif;
+  font-family: Poppins, "Helvetica", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +19,7 @@ body {
           justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: #a164df;
 }
 
 .title {
@@ -29,5 +30,30 @@ body {
           transform: translateX(-50%);
   width: 600px;
   height: 100px;
+  text-align: center;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border-radius: 5px;
+  font-family: inherit;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  border: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:last-of-type {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
