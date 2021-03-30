@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +7,8 @@
 }
 
 body {
-  font-family: roboto, sans-serif;
+  font-family: Muli, sans-serif;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +20,7 @@ body {
           justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: #e1e1e1;
 }
 
 .title {
@@ -30,5 +32,36 @@ body {
   width: 600px;
   height: 100px;
   text-align: center;
+}
+
+.key {
+  border: 1px solid #999;
+  background-color: #eee;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  min-width: 150px;
+  position: relative;
+  padding: 20px;
+}
+
+.key small {
+  position: absolute;
+  top: -28px;
+  text-align: center;
+  width: 100%;
+  color: #555;
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */
